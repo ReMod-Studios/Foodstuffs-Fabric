@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "foodstuffs",
+  "version": "${version}",
+  "name": "Foodstuffs",
+  "description": "A Project that adds various varities of food across your Minecraft World.",
+  "authors": [
+    "LePichu"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/foodstuffs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.remodstudios.foodstuffs.fs_main"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "foodstuffs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*"
+  }
+}
