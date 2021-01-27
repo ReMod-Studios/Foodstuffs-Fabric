@@ -1,0 +1,9 @@
+{
+  "ItemGroup.foodstuffs.group": "Foodstuffs Mod Items",
+
+  "item.foodstuffs.honeymelon": "Honeymelon",
+  "item.foodstuffs.sugar_bread": "Sugar Bread",
+  "item.foodstuffs.sweetberry_jam": "Sweetberry Jam",
+  "item.foodstuffs.sweetberry_pie": "Sweetberry Pie",
+  "item.foodstuffs.honey_pie": "Honey Pie"
+}
