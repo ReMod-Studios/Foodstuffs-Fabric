@@ -1,5 +1,7 @@
 package com.remodstudios.foodstuffs;
 
+import com.remodstudios.foodstuffs.blocks.BlockRegistry;
+import com.remodstudios.foodstuffs.items.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import org.apache.logging.log4j.Level;
@@ -17,6 +19,8 @@ public class fs_main implements ModInitializer {
     public void onInitialize() {
         log(Level.INFO, "Initializing");
         //TODO: Initializer
+        ItemRegistry.init();
+        BlockRegistry.init();
     }
 
     public static void log(Level level, String message){
