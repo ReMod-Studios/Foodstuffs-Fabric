@@ -20,7 +20,6 @@ public class ItemRegistry {
     public static final Item SALT_CHUNKS = register(new Item(new Item.Settings().group(GROUP)), "salt_chunks");
     public static final Item EMPTY_JAR = register(new Item(new Item.Settings().group(GROUP)), "empty_jar");
 
-
     // BlockItems go here
 
 
