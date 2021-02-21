@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "foodstuffs",
-  "version": "${version}",
+  "version": "0.1-a",
   "name": "Foodstuffs",
   "description": "A Project that adds various varities of food across your Minecraft World.",
   "authors": [

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:melon_slice"
+    },
+    "b":
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "result":
+  {
+    "item": "foodstuffs:honey_melon",
+    "count": 4
+  }
+}

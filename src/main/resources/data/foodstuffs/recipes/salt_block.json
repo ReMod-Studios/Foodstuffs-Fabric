@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "foodstuffs:salt_chunk"
+    }
+  },
+  "result":
+  {
+    "item": "foodstuffs:salt_block",
+    "count": 1
+  }
+}

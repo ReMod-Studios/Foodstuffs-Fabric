@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cod"
+    },
+    {
+      "item": "foodstuffs:salt_chunk"
+    }
+  ],
+  "result":
+  {
+    "item": "foodstuffs:stockfish",
+    "count": 1
+  }
+}

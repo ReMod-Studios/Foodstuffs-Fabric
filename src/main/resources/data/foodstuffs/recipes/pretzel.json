@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "aba",
+    " a "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:wheat"
+    },
+    "b":
+    {
+      "item": "foodstuffs:salt_chunk"
+    }
+  },
+  "result":
+  {
+    "item": "foodstuffs:pretzel",
+    "count": 1
+  }
+}

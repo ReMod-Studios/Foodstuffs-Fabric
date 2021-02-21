@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "foodstuffs:jar"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "foodstuffs:salt_chunk"
+    },
+    {
+      "item": "foodstuffs:salt_chunk"
+    }
+  ],
+  "result":
+  {
+    "item": "foodstuffs:pickled_carrot",
+    "count": 1
+  }
+}
