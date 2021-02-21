@@ -11,5 +11,8 @@
   "item.foodstuffs.silver_pear": "Silver Pear",
   "item.foodstuffs.pickled_carrot": "Pickled Carrot",
   "item.foodstuffs.pretzel": "Pretzel",
-  "item.foodstuffs.stockfish": "Stockfish"
+  "item.foodstuffs.stockfish": "Stockfish",
+
+  "block.foodstuffs.salt_ore":"Salt Ore",
+  "block.foodstuffs.salt_block":"Salt Block"
 }
