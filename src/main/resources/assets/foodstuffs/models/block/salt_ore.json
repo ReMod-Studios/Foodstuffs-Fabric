@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "foodstuffs:blocks/salt_ore_block"
+    "all": "foodstuffs:blocks/salt_ore"
   }
 }
