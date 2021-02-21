@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "foodstuffs:item/sweetberry_jam"
+    "layer0": "foodstuffs:items/sweetberry_jam"
   }
 }

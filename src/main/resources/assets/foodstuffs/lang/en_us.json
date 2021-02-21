@@ -2,8 +2,14 @@
   "itemGroup.foodstuffs.group": "Foodstuffs Mod Items",
 
   "item.foodstuffs.honey_melon": "Honey Melon",
-  "item.foodstuffs.sugar_bread": "Sugar Bread",
+  "item.foodstuffs.sugar_bread": "Sweet Bread",
   "item.foodstuffs.sweetberry_jam": "Sweetberry Jam",
   "item.foodstuffs.sweetberry_pie": "Sweetberry Pie",
-  "item.foodstuffs.honey_pie": "Honey Pie"
+  "item.foodstuffs.honey_pie": "Honey Pie",
+  "item.foodstuffs.empty_jar": "Empty Jar",
+  "item.foodstuffs.pear": "Pear",
+  "item.foodstuffs.silver_pear": "Silver Pear",
+  "item.foodstuffs.pickled_carrot": "Pickled Carrot",
+  "item.foodstuffs.pretzel": "Pretzel",
+  "item.foodstuffs.stockfish": "Stockfish"
 }

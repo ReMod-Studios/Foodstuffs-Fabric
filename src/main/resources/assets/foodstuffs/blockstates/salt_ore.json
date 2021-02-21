@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "foodstuffs:block/salt_ore_block" }
+  }
+}

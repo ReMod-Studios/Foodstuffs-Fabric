@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodstuffs:items/honey_pie"
+    "layer0": "foodstuffs:items/silver_pear"
   }
 }
