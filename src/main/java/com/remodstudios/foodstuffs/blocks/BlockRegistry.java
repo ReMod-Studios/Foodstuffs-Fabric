@@ -10,8 +10,8 @@ import static net.minecraft.block.Blocks.*;
 
 public class BlockRegistry {
     // Blocks
-    public static final Block SALT_ORE = register(new Block(FabricBlockSettings.copyOf(REDSTONE_ORE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_ore");
-    public static final Block SALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(REDSTONE_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_block");
+    public static final Block SALT_ORE = register(new Block(FabricBlockSettings.copyOf(IRON_ORE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_ore");
+    public static final Block SALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(IRON_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_block");
 
     // Methods
     private static Block register(Block block, String name) {
