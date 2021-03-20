@@ -26,10 +26,10 @@ public class JarItem extends Item {
         }
 
         if (stack.isEmpty()) {
-            return new ItemStack(ItemRegistry.EMPTY_JAR);
+            return new ItemStack(FSItemRegistry.EMPTY_JAR);
         } else {
             if (user instanceof PlayerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
-                ItemStack itemStack = new ItemStack(ItemRegistry.EMPTY_JAR);
+                ItemStack itemStack = new ItemStack(FSItemRegistry.EMPTY_JAR);
                 PlayerEntity playerEntity = (PlayerEntity)user;
                 if (!playerEntity.getInventory().insertStack(itemStack)) {
                     playerEntity.dropItem(itemStack, false);

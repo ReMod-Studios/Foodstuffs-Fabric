@@ -9,14 +9,16 @@
   ],
   "contributors": [],
   "contact": {},
-  "license": "MIT",
+  "license": "Apache 2.0",
   "icon": "assets/foodstuffs/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "com.remodstudios.foodstuffs.fs_main"
     ],
-    "client": [],
+    "client": [
+      "com.remodstudios.foodstuffs.client.fs_client"
+    ],
     "server": []
   },
   "mixins": [

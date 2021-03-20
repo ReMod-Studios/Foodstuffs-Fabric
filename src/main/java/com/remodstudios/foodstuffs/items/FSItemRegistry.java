@@ -1,7 +1,8 @@
 package com.remodstudios.foodstuffs.items;
 
-import com.remodstudios.foodstuffs.blocks.BlockRegistry;
+import com.remodstudios.foodstuffs.blocks.FSBlockRegistry;
 import com.remodstudios.foodstuffs.fs_main;
+import com.remodstudios.yarnandneedles.items.ItemRegistry;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -9,11 +10,11 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.graalvm.compiler.virtual.phases.ea.EffectList;
 
-public class ItemRegistry {
+public class FSItemRegistry extends ItemRegistry {
+    public static final FSItemRegistry INSTANCE = new FSItemRegistry();
 
-    private static final ItemGroup GROUP = FabricItemGroupBuilder.build(new Identifier(fs_main.MOD_ID,"group"), () -> new ItemStack(ItemRegistry.SWEET_BREAD));
+    private static final ItemGroup GROUP = FabricItemGroupBuilder.build(new Identifier(fs_main.MOD_ID,"group"), () -> new ItemStack(FSItemRegistry.SWEET_BREAD));
 
     // Items go here
     public static final Item HONEY_MELON = register(new Item(new Item.Settings().group(GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(4f).build())), "honey_melon");
@@ -32,16 +33,17 @@ public class ItemRegistry {
     public static final Item PICKLED_CARROT = register(new JarItem(new Item.Settings().group(GROUP).food(new FoodComponent.Builder().hunger(8).saturationModifier(6F).build())), "pickled_carrot");
 
     // BlockItems go here
-    public static final Item SALT_ORE = register(BlockRegistry.SALT_ORE, "salt_ore", new Item.Settings().group(GROUP));
-    public static final Item SALT_BLOCK = register(BlockRegistry.SALT_BLOCK, "salt_block", new Item.Settings().group(GROUP));
+    public static final Item SALT_ORE = register(FSBlockRegistry.SALT_ORE, "salt_ore", new Item.Settings().group(GROUP));
+    public static final Item SALT_BLOCK = register(FSBlockRegistry.SALT_BLOCK, "salt_block", new Item.Settings().group(GROUP));
+
+    public FSItemRegistry() {
+        super(fs_main.MOD_ID);
+    }
 
     ////////////
 
 
     // Methods
-    public static void init () {
-        // Loads Class(TM)
-    }
     private static Item register(Item item, String name) {
         return Registry.register(Registry.ITEM, new Identifier(fs_main.MOD_ID, name), item);
     }
