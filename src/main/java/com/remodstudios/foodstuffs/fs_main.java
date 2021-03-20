@@ -23,6 +23,8 @@ public class fs_main implements ModInitializer {
         //TODO: Initializer
         FSItemRegistry.INSTANCE.init();
         FSBlockRegistry.INSTANCE.init();
+
+        // istg im going to f### bonnie for making me work - angy LePichu
     }
 
     public static void log(Level level, String message){
