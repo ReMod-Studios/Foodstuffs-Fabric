@@ -12,9 +12,9 @@ import static net.minecraft.block.Blocks.*;
 public class FSBlockRegistry extends BlockRegistry {
     public static final FSBlockRegistry INSTANCE = new FSBlockRegistry();
 
-    // Blocks
-    public static final Block SALT_ORE = register(new Block(FabricBlockSettings.copyOf(IRON_ORE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_ore");
-    public static final Block SALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(IRON_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_block");
+//    // Blocks
+//    public static final Block SALT_ORE = register(new Block(FabricBlockSettings.copyOf(IRON_ORE).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_ore");
+//    public static final Block SALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(IRON_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0)), "salt_block");
 
     public FSBlockRegistry() {
         super(fs_main.MOD_ID);
