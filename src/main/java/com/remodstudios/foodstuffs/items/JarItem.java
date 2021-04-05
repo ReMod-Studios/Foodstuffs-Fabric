@@ -17,28 +17,28 @@ public class JarItem extends Item {
     public JarItem(Settings settings) {
         super(settings);
     }
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        super.finishUsing(stack, world, user);
-        if (user instanceof ServerPlayerEntity) {
-            ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)user;
-            Criteria.CONSUME_ITEM.trigger(serverPlayerEntity, stack);
-            serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
-        }
-
-        if (stack.isEmpty()) {
-            return new ItemStack(FSItemRegistry.EMPTY_JAR);
-        } else {
-            if (user instanceof PlayerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
-                ItemStack itemStack = new ItemStack(FSItemRegistry.EMPTY_JAR);
-                PlayerEntity playerEntity = (PlayerEntity)user;
-                if (!playerEntity.getInventory().insertStack(itemStack)) {
-                    playerEntity.dropItem(itemStack, false);
-                }
-            }
-
-            return stack;
-        }
-    }
+//    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+//        super.finishUsing(stack, world, user);
+//        if (user instanceof ServerPlayerEntity) {
+//            ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)user;
+//            Criteria.CONSUME_ITEM.trigger(serverPlayerEntity, stack);
+//            serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
+//        }
+//
+//        if (stack.isEmpty()) {
+//            return new ItemStack(FSItemRegistry.EMPTY_JAR);
+//        } else {
+//            if (user instanceof PlayerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
+//                ItemStack itemStack = new ItemStack(FSItemRegistry.EMPTY_JAR);
+//                PlayerEntity playerEntity = (PlayerEntity)user;
+//                if (!playerEntity.getInventory().insertStack(itemStack)) {
+//                    playerEntity.dropItem(itemStack, false);
+//                }
+//            }
+//
+//            return stack;
+//        }
+//    }
 
     public int getMaxUseTime(ItemStack stack) {
         return 40;

@@ -5,6 +5,7 @@ import com.remodstudios.foodstuffs.fs_main;
 import com.remodstudios.yarnandneedles.items.ItemRegistry;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -14,9 +15,9 @@ import net.minecraft.util.registry.Registry;
 public class FSItemRegistry extends ItemRegistry {
     public static final FSItemRegistry INSTANCE = new FSItemRegistry();
 
-    private static final ItemGroup GROUP = FabricItemGroupBuilder.build(new Identifier(fs_main.MOD_ID,"group"), () -> new ItemStack(FSItemRegistry.SWEET_BREAD));
+    private static final ItemGroup GROUP = FabricItemGroupBuilder.build(new Identifier(fs_main.MOD_ID,"group"), () -> new ItemStack(Blocks.AIR));
 
-    // Items go here
+//    // Items go here
 //    public static final Item HONEY_MELON = register(new Item(new Item.Settings().group(GROUP).food(new FoodComponent.Builder().hunger(2).saturationModifier(4f).build())), "honey_melon");
 //    public static final Item HONEY_PIE = register(new Item(new Item.Settings().group(GROUP).food(new FoodComponent.Builder().hunger(10).saturationModifier(7f).build())), "honey_pie");
 //    public static final Item SWEET_BREAD = register(new Item(new Item.Settings().group(GROUP).food(new FoodComponent.Builder().hunger(6).saturationModifier(4f).build())), "sweet_bread");
